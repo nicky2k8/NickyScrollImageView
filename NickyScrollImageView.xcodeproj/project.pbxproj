@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A635C769614BF51578502AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB9166AF15C91DE7E29CF64 /* libPods.a */; };
+		FF992F021C2E6F4200E7101B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F011C2E6F4200E7101B /* main.m */; };
+		FF992F051C2E6F4200E7101B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F041C2E6F4200E7101B /* AppDelegate.m */; };
+		FF992F081C2E6F4200E7101B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F071C2E6F4200E7101B /* ViewController.m */; };
+		FF992F0B1C2E6F4200E7101B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF992F091C2E6F4200E7101B /* Main.storyboard */; };
+		FF992F0D1C2E6F4200E7101B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF992F0C1C2E6F4200E7101B /* Assets.xcassets */; };
+		FF992F101C2E6F4200E7101B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF992F0E1C2E6F4200E7101B /* LaunchScreen.storyboard */; };
+		FF992F1D1C2E70CB00E7101B /* NickyImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F1C1C2E70CB00E7101B /* NickyImageScrollView.m */; };
+		FF992F261C2E8B1400E7101B /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F251C2E8B1400E7101B /* SecViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3823A940AEBE1D473F536DC8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		740B9C9077868F90D116BBB7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB9166AF15C91DE7E29CF64 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF992EFD1C2E6F4200E7101B /* NickyScrollImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickyScrollImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF992F011C2E6F4200E7101B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF992F031C2E6F4200E7101B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF992F041C2E6F4200E7101B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF992F061C2E6F4200E7101B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF992F071C2E6F4200E7101B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF992F0A1C2E6F4200E7101B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF992F0C1C2E6F4200E7101B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF992F0F1C2E6F4200E7101B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF992F111C2E6F4200E7101B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF992F1B1C2E70CB00E7101B /* NickyImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickyImageScrollView.h; sourceTree = "<group>"; };
+		FF992F1C1C2E70CB00E7101B /* NickyImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickyImageScrollView.m; sourceTree = "<group>"; };
+		FF992F241C2E8B1400E7101B /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		FF992F251C2E8B1400E7101B /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF992EFA1C2E6F4200E7101B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A635C769614BF51578502AE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15DAFCA163140B71F445D9E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740B9C9077868F90D116BBB7 /* Pods.debug.xcconfig */,
+				3823A940AEBE1D473F536DC8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		310614E9F467A526DBD6B63F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB9166AF15C91DE7E29CF64 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF992EF41C2E6F4200E7101B = {
+			isa = PBXGroup;
+			children = (
+				FF992EFF1C2E6F4200E7101B /* NickyScrollImageView */,
+				FF992EFE1C2E6F4200E7101B /* Products */,
+				15DAFCA163140B71F445D9E1 /* Pods */,
+				310614E9F467A526DBD6B63F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF992EFE1C2E6F4200E7101B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF992EFD1C2E6F4200E7101B /* NickyScrollImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF992EFF1C2E6F4200E7101B /* NickyScrollImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FF992F1A1C2E70CB00E7101B /* NickyScrollImageView */,
+				FF992F031C2E6F4200E7101B /* AppDelegate.h */,
+				FF992F041C2E6F4200E7101B /* AppDelegate.m */,
+				FF992F061C2E6F4200E7101B /* ViewController.h */,
+				FF992F071C2E6F4200E7101B /* ViewController.m */,
+				FF992F241C2E8B1400E7101B /* SecViewController.h */,
+				FF992F251C2E8B1400E7101B /* SecViewController.m */,
+				FF992F091C2E6F4200E7101B /* Main.storyboard */,
+				FF992F0C1C2E6F4200E7101B /* Assets.xcassets */,
+				FF992F0E1C2E6F4200E7101B /* LaunchScreen.storyboard */,
+				FF992F111C2E6F4200E7101B /* Info.plist */,
+				FF992F001C2E6F4200E7101B /* Supporting Files */,
+			);
+			path = NickyScrollImageView;
+			sourceTree = "<group>";
+		};
+		FF992F001C2E6F4200E7101B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF992F011C2E6F4200E7101B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF992F1A1C2E70CB00E7101B /* NickyScrollImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FF992F1B1C2E70CB00E7101B /* NickyImageScrollView.h */,
+				FF992F1C1C2E70CB00E7101B /* NickyImageScrollView.m */,
+			);
+			path = NickyScrollImageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF992EFC1C2E6F4200E7101B /* NickyScrollImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF992F141C2E6F4200E7101B /* Build configuration list for PBXNativeTarget "NickyScrollImageView" */;
+			buildPhases = (
+				C86B56043E68FBA0D9A95A00 /* Check Pods Manifest.lock */,
+				FF992EF91C2E6F4200E7101B /* Sources */,
+				FF992EFA1C2E6F4200E7101B /* Frameworks */,
+				FF992EFB1C2E6F4200E7101B /* Resources */,
+				F0D4557B838FCD534E5DECF3 /* Embed Pods Frameworks */,
+				E6E491EB03B6DCB98012F323 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NickyScrollImageView;
+			productName = NickyScrollImageView;
+			productReference = FF992EFD1C2E6F4200E7101B /* NickyScrollImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF992EF51C2E6F4200E7101B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.nickyTsui;
+				TargetAttributes = {
+					FF992EFC1C2E6F4200E7101B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = FF992EF81C2E6F4200E7101B /* Build configuration list for PBXProject "NickyScrollImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF992EF41C2E6F4200E7101B;
+			productRefGroup = FF992EFE1C2E6F4200E7101B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF992EFC1C2E6F4200E7101B /* NickyScrollImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF992EFB1C2E6F4200E7101B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF992F101C2E6F4200E7101B /* LaunchScreen.storyboard in Resources */,
+				FF992F0D1C2E6F4200E7101B /* Assets.xcassets in Resources */,
+				FF992F0B1C2E6F4200E7101B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C86B56043E68FBA0D9A95A00 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E491EB03B6DCB98012F323 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D4557B838FCD534E5DECF3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF992EF91C2E6F4200E7101B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF992F1D1C2E70CB00E7101B /* NickyImageScrollView.m in Sources */,
+				FF992F081C2E6F4200E7101B /* ViewController.m in Sources */,
+				FF992F051C2E6F4200E7101B /* AppDelegate.m in Sources */,
+				FF992F021C2E6F4200E7101B /* main.m in Sources */,
+				FF992F261C2E8B1400E7101B /* SecViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF992F091C2E6F4200E7101B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF992F0A1C2E6F4200E7101B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF992F0E1C2E6F4200E7101B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF992F0F1C2E6F4200E7101B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF992F121C2E6F4200E7101B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF992F131C2E6F4200E7101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF992F151C2E6F4200E7101B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740B9C9077868F90D116BBB7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NickyScrollImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickyTsui.NickyScrollImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF992F161C2E6F4200E7101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3823A940AEBE1D473F536DC8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NickyScrollImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nickyTsui.NickyScrollImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF992EF81C2E6F4200E7101B /* Build configuration list for PBXProject "NickyScrollImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF992F121C2E6F4200E7101B /* Debug */,
+				FF992F131C2E6F4200E7101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF992F141C2E6F4200E7101B /* Build configuration list for PBXNativeTarget "NickyScrollImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF992F151C2E6F4200E7101B /* Debug */,
+				FF992F161C2E6F4200E7101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF992EF51C2E6F4200E7101B /* Project object */;
+}
