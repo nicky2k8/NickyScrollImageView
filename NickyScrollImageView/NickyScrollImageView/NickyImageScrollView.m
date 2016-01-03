@@ -219,7 +219,7 @@ static NSString *const      nickyImageScrollViewCell = @"nickyImageScrollViewCel
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_currentPage inSection:maxNumber/2] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
 }
 
-- (void)setImageArray:(NSMutableArray *)imageArray{
+- (void)setImageArray:(NSArray *)imageArray{
     _imageArray = [imageArray copy];
     if(_imageArray.count){
         self.pageControl.numberOfPages=_imageArray.count;
