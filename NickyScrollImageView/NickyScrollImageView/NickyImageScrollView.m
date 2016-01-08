@@ -7,9 +7,10 @@
 //
 
 #import "NickyImageScrollView.h"
+#import "NickyImagePreView.h"
 #import <UIImageView+WebCache.h>
 
-static NSInteger const      maxNumber = 100;
+static NSInteger const      maxNumber = 10;
 static NSString *const      nickyImageScrollViewCell = @"nickyImageScrollViewCell";
 
 @interface NickyImageCell : UICollectionViewCell
@@ -151,6 +152,15 @@ static NSString *const      nickyImageScrollViewCell = @"nickyImageScrollViewCel
     return maxNumber;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.canShowPreView){
+        NickyImageCell *cell = (NickyImageCell*)[collectionView cellForItemAtIndexPath:indexPath];
+        // 获取当前视图位于window的位置
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        CGRect windowFrame = [window convertRect:self.frame fromView:self.superview];
+        
+        [NickyImagePreView showWithImages:self.imageArray originalFrame:windowFrame originalImage:cell.imageView.image currentNumber:indexPath.item superCollectionView:self.collectionView];
+        return;
+    }
     if (self.delegate && [self.delegate respondsToSelector:@selector(nickyImageScrollView:didSelectedAtIndexPath:)]){
         [self.delegate nickyImageScrollView:self didSelectedAtIndexPath:indexPath];
     }

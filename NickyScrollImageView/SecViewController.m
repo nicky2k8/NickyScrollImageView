@@ -44,7 +44,9 @@
 }
 - (NickyImageScrollView *)imageScrollview{
     if (!_imageScrollview){
-        _imageScrollview = [[NickyImageScrollView alloc]initWithFrame:CGRectMake(0, 0, 375, 300)];
+        _imageScrollview = [[NickyImageScrollView alloc]initWithFrame:CGRectMake(1, 50, 200, 100)];
+        _imageScrollview.loadMode = NickyImageScrollViewAsyncDownloadMode;
+        _imageScrollview.canShowPreView = YES;
     }
     return _imageScrollview;
 }

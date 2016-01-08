@@ -63,6 +63,10 @@ typedef NS_ENUM(NSUInteger, NickyImageScrollViewMode) {
  */
 @property (strong,nonatomic)UIImage                     *placeImage;
 /**
+ *  点击图片时是否能显示大图预览
+ */
+@property (assign,nonatomic)BOOL                        canShowPreView;
+/**
  *  View Init Method
  *
  *  @param frame    setting View's Frame

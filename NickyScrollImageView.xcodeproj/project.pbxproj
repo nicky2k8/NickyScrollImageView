@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A635C769614BF51578502AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB9166AF15C91DE7E29CF64 /* libPods.a */; };
+		FF60EC0C1C3F4A2900F0D2C1 /* NickyImagePreView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF60EC0B1C3F4A2900F0D2C1 /* NickyImagePreView.m */; };
 		FF992F021C2E6F4200E7101B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F011C2E6F4200E7101B /* main.m */; };
 		FF992F051C2E6F4200E7101B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F041C2E6F4200E7101B /* AppDelegate.m */; };
 		FF992F081C2E6F4200E7101B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF992F071C2E6F4200E7101B /* ViewController.m */; };
@@ -22,6 +23,8 @@
 		3823A940AEBE1D473F536DC8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		740B9C9077868F90D116BBB7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB9166AF15C91DE7E29CF64 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF60EC0A1C3F4A2900F0D2C1 /* NickyImagePreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NickyImagePreView.h; sourceTree = "<group>"; };
+		FF60EC0B1C3F4A2900F0D2C1 /* NickyImagePreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickyImagePreView.m; sourceTree = "<group>"; };
 		FF992EFD1C2E6F4200E7101B /* NickyScrollImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NickyScrollImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF992F011C2E6F4200E7101B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF992F031C2E6F4200E7101B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 			children = (
 				FF992F1B1C2E70CB00E7101B /* NickyImageScrollView.h */,
 				FF992F1C1C2E70CB00E7101B /* NickyImageScrollView.m */,
+				FF60EC0A1C3F4A2900F0D2C1 /* NickyImagePreView.h */,
+				FF60EC0B1C3F4A2900F0D2C1 /* NickyImagePreView.m */,
 			);
 			path = NickyScrollImageView;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				FF992F1D1C2E70CB00E7101B /* NickyImageScrollView.m in Sources */,
 				FF992F081C2E6F4200E7101B /* ViewController.m in Sources */,
 				FF992F051C2E6F4200E7101B /* AppDelegate.m in Sources */,
+				FF60EC0C1C3F4A2900F0D2C1 /* NickyImagePreView.m in Sources */,
 				FF992F021C2E6F4200E7101B /* main.m in Sources */,
 				FF992F261C2E8B1400E7101B /* SecViewController.m in Sources */,
 			);
