@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^nickyPreviewRemoveBlock)(NSInteger endIndex);
 @interface NickyImagePreView : UIView
 @property (strong,nonatomic)UIImageView     *originalImage;
 /**
@@ -24,5 +24,6 @@
                  originalFrame:(CGRect)originalFrame
                  originalImage:(UIImage *)originalImage
                  currentNumber:(NSInteger)currentNumber
-           superCollectionView:(UICollectionView *)collectionView;
+           superCollectionView:(UICollectionView *)collectionView
+                didFinishBlock:(nickyPreviewRemoveBlock)finishBlock;
 @end

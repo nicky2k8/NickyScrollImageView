@@ -152,6 +152,7 @@ static NSString *const cellIdentifier = @"preCell";
 @interface NickyImagePreView ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     UICollectionView *superCollectionView;
+    nickyPreviewRemoveBlock finishBlock;
 }
 @property (strong,nonatomic)UICollectionViewFlowLayout  *flowLayout;
 @property (strong,nonatomic)UICollectionView            *collectionView;
@@ -184,6 +185,9 @@ static NSString *const cellIdentifier = @"preCell";
         self.backgroundView.alpha = 0;
     } completion:^(BOOL finished) {
         self->superCollectionView.hidden = NO;
+        if(self->finishBlock){
+            self->finishBlock(currentIndexPath.item);
+        }
         [self removeFromSuperview];
     }];
     
@@ -192,11 +196,13 @@ static NSString *const cellIdentifier = @"preCell";
                  originalFrame:(CGRect)originalFrame
                  originalImage:(UIImage *)originalImage
                  currentNumber:(NSInteger)currentNumber
-           superCollectionView:(UICollectionView *)collectionView{
+           superCollectionView:(UICollectionView *)collectionView
+                didFinishBlock:(nickyPreviewRemoveBlock)finishBlock{
     NickyImagePreView *preView = [[NickyImagePreView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     preView.originalFrame = originalFrame;
     preView.imageArray    = images;
     preView.originalImage.image = originalImage;
+    preView->finishBlock = finishBlock;
     preView->superCollectionView = collectionView;
     preView->superCollectionView.hidden = YES;
     [preView addSubview:preView.backgroundView];

@@ -157,8 +157,10 @@ static NSString *const      nickyImageScrollViewCell = @"nickyImageScrollViewCel
         // 获取当前视图位于window的位置
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         CGRect windowFrame = [window convertRect:self.frame fromView:self.superview];
-        
-        [NickyImagePreView showWithImages:self.imageArray originalFrame:windowFrame originalImage:cell.imageView.image currentNumber:indexPath.item superCollectionView:self.collectionView];
+        __weak __typeof(self)weakSelf = self;
+        [NickyImagePreView showWithImages:self.imageArray originalFrame:windowFrame originalImage:cell.imageView.image currentNumber:indexPath.item superCollectionView:self.collectionView didFinishBlock:^(NSInteger endIndex) {
+            [weakSelf.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:endIndex inSection:maxNumber/2] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        }];
         return;
     }
     if (self.delegate && [self.delegate respondsToSelector:@selector(nickyImageScrollView:didSelectedAtIndexPath:)]){
