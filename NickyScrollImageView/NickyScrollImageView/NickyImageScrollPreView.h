@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 typedef void(^nickyPreviewRemoveBlock)(NSInteger endIndex);
-@interface NickyImagePreView : UIView
+typedef CGRect(^nickyPreviewWillRemoveToFrame)(NSInteger index);
+@interface NickyImageScrollPreView : UIView
 @property (strong,nonatomic)UIImageView     *originalImage;
 /**
  *  scrollview原始位置
@@ -19,11 +20,11 @@ typedef void(^nickyPreviewRemoveBlock)(NSInteger endIndex);
  */
 @property (strong,nonatomic)NSArray         *imageArray;
 
-
 + (instancetype)showWithImages:(NSArray *)images
                  originalFrame:(CGRect)originalFrame
                  originalImage:(UIImage *)originalImage
                  currentNumber:(NSInteger)currentNumber
            superCollectionView:(UICollectionView *)collectionView
-                didFinishBlock:(nickyPreviewRemoveBlock)finishBlock;
+                didFinishBlock:(nickyPreviewRemoveBlock)finishBlock
+                willMoveToRect:(nickyPreviewWillRemoveToFrame)originalRectBlock;
 @end
